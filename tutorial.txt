@@ -1,0 +1,11 @@
+C plus plus for beginners
+website learncpp.com
+
+using g++ you have to compile the code:
+g++ somecode.cpp
+
+which makes a script like a.out or helloWorld.o
+then you run said file in bash ex:
+./helloworld.o
+
+
