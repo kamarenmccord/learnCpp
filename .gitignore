@@ -1,4 +1,10 @@
+
+# file types
 *.out
+*.log
+
+#specific files
 a.out
 notes.txt
+
 
