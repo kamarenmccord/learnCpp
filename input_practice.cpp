@@ -3,26 +3,27 @@
 //
 #include <iostream>
 
-int muilt_two(int someNum) {
+int multi_nums(int someNum, int multiplyer) {
     // if the number entered is not a number
     // 0 is defaulted
-    return someNum * 2;
+    return someNum * multiplyer;
 }
 
 int main() {
     // init vars
-    int users_number;
-    int number_double;
+    int users_number1;
+    int users_number2;
 
     //get user input
-    std::cout << "enter a number\n";
-    std::cin >> users_number;
+    std::cout << "enter 1st number\n";
+    std::cin >> users_number1;
 
-    //multiply by 2 using function
-    number_double = muilt_two(users_number);
+    std::cout << "enter 2nd number\n";
+    std::cin >> users_number2;
 
     //print the results
-    std::cout << "this number times 2 is " << number_double;
+    std::cout << users_number1 << " * " << users_number2 <<"\n"
+        << "is: " << multi_nums(users_number1,users_number2);
 
     //compile succesfully
     return 0;
@@ -31,5 +32,8 @@ int main() {
 /*
  * could avoid assigning a second var by calling function in the final cout
  * could do the users_numb*2 and avoid using a function all together
- * 
+ *
  */
+
+// going foward //
+// updating function to muitply from the command line, changing the output promt text
