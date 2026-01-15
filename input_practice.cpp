@@ -27,3 +27,9 @@ int main() {
     //compile succesfully
     return 0;
 }
+
+/*
+ * could avoid assigning a second var by calling function in the final cout
+ * could do the users_numb*2 and avoid using a function all together
+ * 
+ */
