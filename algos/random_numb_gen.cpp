@@ -10,13 +10,13 @@ using namespace std;
 
 //#define print
 
-int main() {
+vector<int> rand_generator(int max_size =10) {
     const int MIN_VAL = 1;
     const int MAX_VAL = 100;
-    const size_t ARRAY_SIZE = 10;
+    //const size_t ARRAY_SIZE = 10;
 
     // use vector for dynamic sizing or array for fixed size
-    vector<int> random_numbers(ARRAY_SIZE);
+    vector<int> random_numbers(max_size);
 
     //set up random number generation facilities
     random_device rd;
@@ -28,13 +28,6 @@ int main() {
         return dist(engine);
     });
 
-    // print numbers optional
-//#ifndef print
-    cout << "Generated random numb: " << endl;
-    for (int number : random_numbers) {
-        cout << number << " ";
-    }
-    cout << endl;
-//#endif
+    return random_numbers;
 
 }
